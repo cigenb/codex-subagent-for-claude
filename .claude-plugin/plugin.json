@@ -1,0 +1,11 @@
+{
+  "name": "codex-sub",
+  "version": "0.2.7",
+  "description": "在 Claude Code 里把 Codex 当子代理：异步派发、结果自动送回、可 steer/interrupt、内置代码审查",
+  "mcpServers": {
+    "codex-sub": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server.py"]
+    }
+  }
+}

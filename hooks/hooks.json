@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/hook.py\" UserPromptSubmit", "timeout": 10}]}
+    ],
+    "PostToolUse": [
+      {"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/hook.py\" PostToolUse", "timeout": 10}]}
+    ],
+    "Stop": [
+      {"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/hook.py\" Stop", "timeout": 10}]}
+    ]
+  }
+}
